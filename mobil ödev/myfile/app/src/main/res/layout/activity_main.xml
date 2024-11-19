@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Birinci sayı için EditText -->
+    <EditText
+        android:id="@+id/firstNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birinci Sayıyı Girin"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- İkinci sayı için EditText -->
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İkinci Sayıyı Girin"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/firstNumber"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Toplama Butonu -->
+    <Button
+        android:id="@+id/btnToplama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toplama"
+        android:layout_below="@id/secondNumber"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- Çıkarma Butonu -->
+    <Button
+        android:id="@+id/btnCikarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çıkarma"
+        android:layout_below="@id/secondNumber"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btnToplama"/>
+
+    <!-- Çarpma Butonu -->
+    <Button
+        android:id="@+id/btnCarpma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çarpma"
+        android:layout_below="@id/secondNumber"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btnCikarma"/>
+
+    <!-- Bölme Butonu -->
+    <Button
+        android:id="@+id/btnBolme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bölme"
+        android:layout_below="@id/secondNumber"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btnCarpma"/>
+
+    <!-- Sonuç için TextView -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonuç: "
+        android:layout_below="@id/btnToplama"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
